@@ -49,5 +49,13 @@ helm repo add nginx-stable https://helm.nginx.com/stable
 helm repo add metallb https://metallb.github.io/metallb
 helm repo add istio https://istio-release.storage.googleapis.com/charts
 helm repo add kiali https://kiali.org/helm-charts
+helm repo add grafana https://grafana.github.io/helm-charts
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```
+6. install prometheus and grafana 
+```
+helm install prometheus prometheus-community/prometheus
+helm install grafana grafana/grafana
+```
+7. 
